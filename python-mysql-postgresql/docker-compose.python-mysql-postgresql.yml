@@ -115,7 +115,7 @@ services:
             - ../_common/ssl/acra-server/:/ssl
             - ../_common/ssl/ca/ca.crt:/ssl/root.crt
             - ./acra-server-config:/config
-            - ../acra/examples/python/extended_encryptor_config.yaml:/config/extended_encryptor_config.yaml
+            - ../acra/examples/python/extended_example_encryptor_config.yaml:/config/extended_encryptor_config.yaml
         command: >-
             --token_db=/data/token.db
             --keys_dir=/data/acra-server
